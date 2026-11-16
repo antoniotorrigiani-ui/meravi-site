@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Meravi.Art — Sculture su misura, decorazioni da parete e insegne 3D | Made in Italy</title>
+<meta content="Sculture e decorazioni da parete fatte a mano su misura: ritratti del tuo cane, grandi installazioni per showroom e hotel, loghi e insegne 3D. Stampa 3D + finitura artigianale. Preventivo gratuito, spedizione in Europa." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--ink:#1d1a17;--muted:#6f675e;--paper:#f6f1ea;--card:#fffdf9;--line:#e6ddd1;--accent:#b0472f;--gold:#b8924a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;margin:0 0 .4em}
+h2{font-size:clamp(2rem,4vw,3rem)}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.74rem;color:var(--accent);font-weight:600;margin-bottom:.8rem}
+.lead{font-size:1.12rem;color:var(--muted);max-width:640px}
+section{padding:90px 0}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(246,241,234,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;font-size:.92rem}
+.links a{text-decoration:none;color:var(--muted)}.links a:hover{color:var(--ink)}
+.lang{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:5px 12px;font:600 .8rem Inter;cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;text-decoration:none;padding:14px 24px;border-radius:40px;font-weight:600;font-size:.95rem;border:0;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn.wa{background:#1f9d55}
+@media(max-width:860px){.links{display:none}}
+/* hero */
+.hero{padding:60px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem)}
+.hero h1 em{color:var(--accent);font-style:italic}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 30px}
+.stats{display:flex;gap:34px;flex-wrap:wrap}
+.stats b{font-family:"Cormorant Garamond",serif;font-size:2rem;display:block;line-height:1}
+.stats span{font-size:.8rem;color:var(--muted)}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mosaic img{border-radius:14px;object-fit:cover;width:100%;height:100%}
+.mosaic .tall{grid-row:span 2}
+.mosaic div{aspect-ratio:3/4;overflow:hidden;border-radius:14px}
+.mosaic div.tall{aspect-ratio:auto}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.about img{border-radius:16px;aspect-ratio:4/5;object-fit:cover}
+.about p{color:var(--muted)}
+@media(max-width:860px){.about .wrap{grid-template-columns:1fr}}
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.svc article{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.svc img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.svc .b{padding:22px 22px 26px}
+.svc h3{font-size:1.6rem}
+.svc p{color:var(--muted);margin:.2em 0 1em;font-size:.95rem}
+.svc ul{margin:0;padding-left:18px;font-size:.92rem}
+.svc .from{margin-top:auto;padding:0 22px 22px;font-weight:600;color:var(--accent)}
+@media(max-width:900px){.svc{grid-template-columns:1fr}}
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0}
+.filters button{border:1px solid var(--line);background:var(--card);padding:8px 16px;border-radius:30px;font:500 .88rem Inter;cursor:pointer}
+.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.gal{columns:3 280px;column-gap:14px}
+.g{break-inside:avoid;margin:0 0 14px;position:relative;cursor:zoom-in;border-radius:14px;overflow:hidden;background:#e9e1d6}
+.g img{width:100%;transition:transform .6s}
+.g:hover img{transform:scale(1.04)}
+.g figcaption{position:absolute;inset:auto 0 0 0;padding:28px 14px 12px;color:#fff;font-size:.86rem;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+/* process */
+.dark{background:var(--ink);color:#f3ece2}
+.dark .lead{color:#bfb5a8}.dark .eyebrow{color:var(--gold)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:44px;counter-reset:s}
+.steps div{border-top:1px solid #4a433c;padding-top:18px}
+.steps div::before{counter-increment:s;content:"0" counter(s);font-family:"Cormorant Garamond",serif;font-size:2.4rem;color:var(--gold);display:block}
+.steps h3{font-family:Inter;font-size:1rem;font-weight:600;margin:.4em 0}
+.steps p{color:#bfb5a8;font-size:.9rem;margin:0}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+/* shop */
+.shopgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-top:34px}
+.prod{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:zoom-in}
+.prod img{aspect-ratio:1;object-fit:cover;width:100%}
+.prod figcaption{padding:12px 14px;display:flex;justify-content:space-between;gap:10px;font-size:.88rem}
+.prod b{white-space:nowrap;color:var(--accent)}
+.note{margin-top:22px;font-size:.9rem;color:var(--muted)}
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.why b{display:block;font-size:1.05rem;margin-bottom:6px}
+.why p{margin:0;color:var(--muted);font-size:.92rem}
+@media(max-width:900px){.why{grid-template-columns:1fr 1fr}}
+/* faq */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--accent);font-size:1.3rem}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin:.6em 0 0}
+/* contact */
+.contact{background:linear-gradient(135deg,#efe5d8,#f6f1ea)}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.cbox{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.cbox label{display:block;font-size:.82rem;font-weight:600;margin:14px 0 6px}
+.cbox input,.cbox select,.cbox textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;background:#fff}
+.cbox textarea{min-height:110px;resize:vertical}
+.chan{display:grid;gap:12px;margin-top:24px}
+.chan a{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none}
+.chan small{color:var(--muted)}
+@media(max-width:860px){.contact .wrap{grid-template-columns:1fr}}
+footer{padding:36px 0;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+/* lightbox */
+#lb{position:fixed;inset:0;background:rgba(15,12,10,.92);display:none;align-items:center;justify-content:center;z-index:99;padding:24px;cursor:zoom-out}
+#lb.on{display:flex}#lb img{max-height:90vh;border-radius:10px}
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.reveal{opacity:0;transform:translateY(20px);transition:.8s}.reveal.in{opacity:1;transform:none}
+</style>
+<link href="https://meravi-art.netlify.app/" rel="canonical"/><link href="https://meravi-art.netlify.app/" hreflang="it" rel="alternate"/><link href="https://meravi-art.netlify.app/en/" hreflang="en" rel="alternate"/><link href="https://meravi-art.netlify.app/en/" hreflang="x-default" rel="alternate"/><meta content="website" property="og:type"/><meta content="Meravi.Art — Sculture su misura, decorazioni da parete e insegne 3D | Made in Italy" property="og:title"/><meta content="Sculture e decorazioni da parete fatte a mano su misura: ritratti del tuo cane, grandi installazioni per showroom e hotel, loghi e insegne 3D. Stampa 3D + finitura artigianale. Preventivo gratuito, spedizione in Europa." property="og:description"/><meta content="https://meravi-art.netlify.app/" property="og:url"/><meta content="https://meravi-art.netlify.app/img/peacock.jpg" property="og:image"/><meta content="it_IT" property="og:locale"/><meta content="Meravi.Art" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🐾&lt;/text&gt;&lt;/svg&gt;" rel="icon"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Meravi.Art", "description": "Sculture e decorazioni da parete fatte a mano su misura: ritratti del tuo cane, grandi installazioni per showroom e hotel, loghi e insegne 3D. Stampa 3D + finitura artigianale. Preventivo gratuito, spedizione in Europa.", "url": "https://meravi-art.netlify.app/", "image": "https://meravi-art.netlify.app/img/peacock.jpg", "telephone": "+39 380 170 9111", "email": "meraviartialia@gmail.com", "address": {"@type": "PostalAddress", "addressCountry": "IT"}, "areaServed": "Europe", "priceRange": "€€", "sameAs": ["https://www.tiktok.com/@meravi.art"]}</script></head>
+<body>
+<nav><div class="wrap">
+<a class="logo" href="#top">Meravi<span>.</span>Art</a>
+<div class="links">
+<a href="#servizi">Servizi</a>
+<a href="#opere">Opere</a>
+<a href="#processo">Come funziona</a>
+<a href="#collezione">Collezione</a>
+<a href="#contatti">Contatti</a>
+</div>
+<a class="lang" href="en/" hreflang="en">EN</a>
+</div></nav>
+<header class="hero" id="top"><div class="wrap">
+<div class="reveal">
+<div class="eyebrow">Fatto a mano · Stampa 3D · Made in Italy</div>
+<h1>La tua idea diventa <em>un'opera d'arte</em></h1>
+<p class="lead">Sculture, decorazioni da parete, grandi installazioni e loghi 3D realizzati su misura. Uniamo modellazione digitale, stampa 3D di grande formato e finitura a mano per creare pezzi che esistono una volta sola — per la tua casa, la tua attività o per chi ami.</p>
+<div class="ctas">
+<a class="btn" href="#contatti">Richiedi un preventivo gratuito →</a>
+<a class="btn alt" href="#opere">Guarda le opere</a>
+</div>
+<div class="stats">
+<div><b>40+</b><span>modelli originali</span></div>
+<div><b>3.8K</b><span>follower su TikTok</span></div>
+<div><b>EU</b><span>spedizione in Europa</span></div>
+</div>
+</div>
+<div class="mosaic reveal">
+<div class="tall"><img alt="Pavone monumentale" src="img/peacock.jpg"/></div>
+<div><img alt="Bulldog dorato" src="img/xmas_frenchie.jpg"/></div>
+<div><img alt="Volto con piume di pavone" src="img/mask.jpg"/></div>
+</div>
+</div></header>
+<section class="about"><div class="wrap">
+<img alt="Scultura cane bianca" class="reveal" src="img/whitedog.jpg"/>
+<div class="reveal">
+<div class="eyebrow">Lo studio</div>
+<h2>Tra scultura e tecnologia</h2>
+<p>Meravi.Art nasce da un'idea semplice: ogni spazio merita un pezzo con una storia. Ogni opera parte da uno schizzo a matita, diventa un modello 3D preciso, viene stampata a sezioni e poi levigata, assemblata e dipinta a mano — strato dopo strato, finché sembra scolpita, non stampata.</p>
+<p>Realizziamo piccoli regali e pezzi alti diversi metri: ritratti del tuo animale, sculture monumentali per showroom e hotel, loghi e insegne per i brand, elementi decorativi progettati attorno al tuo interno. Finiture laccate lucide, metallizzate, a specchio, effetto marmo o opache — in qualsiasi colore.</p>
+<a class="btn" href="#contatti">Raccontaci la tua idea</a>
+</div>
+</div></section>
+<section id="servizi" style="padding-top:20px"><div class="wrap">
+<div class="eyebrow">Cosa realizziamo</div>
+<h2>Tre modi per lavorare con noi</h2>
+<div class="svc">
+<article class="reveal"><img alt="" src="img/statue.jpg"/>
+<div class="b"><h3>Grandi installazioni</h3>
+<p>Pezzi d'impatto per case, ville, showroom, hotel e ristoranti.</p>
+<ul><li>Sculture fino a 2–3 m di altezza</li><li>Composizioni e pareti d'arte</li><li>Progetto su misura per spazio e colori</li></ul></div>
+<div class="from">Preventivo su misura</div></article>
+<article class="reveal"><img alt="" src="img/mask.jpg"/>
+<div class="b"><h3>Per il tuo business</h3>
+<p>Il tuo brand in tre dimensioni: indimenticabile e fotografato da ogni cliente.</p>
+<ul><li>Loghi 3D e insegne</li><li>Mascotte e simboli per locali</li><li>Regali aziendali e premi</li></ul></div>
+<div class="from">Da 300 €</div></article>
+<article class="reveal"><img alt="" src="img/xmas_pug.jpg"/>
+<div class="b"><h3>Pet art e regali</h3>
+<p>Il tuo cane o gatto trasformato in scultura da parete — il regalo che nessuno dimentica.</p>
+<ul><li>Ritratto dalle tue foto</li><li>Oltre 40 razze già modellate</li><li>Qualsiasi colore e finitura</li></ul></div>
+<div class="from">Da 50 €</div></article>
+</div>
+</div></section>
+<section id="opere" style="padding-top:20px"><div class="wrap">
+<div class="eyebrow">Portfolio</div>
+<h2>Opere selezionate</h2>
+<p class="lead">Dal primo schizzo a matita al pezzo finito sulla parete. Clicca su un'immagine per ingrandirla.</p>
+<div class="filters" id="filters">
+<button class="on" data-f="*">Tutte</button>
+<button data-f="Grandi installazioni">Grandi installazioni</button>
+<button data-f="Per il business">Per il business</button>
+<button data-f="Pet art">Pet art</button>
+<button data-f="Disegno &amp; progetto">Disegno &amp; progetto</button>
+</div>
+<div class="gal" id="gal">
+<figure class="g" data-cat="Grandi installazioni" data-full="img/peacock.jpg"><img alt="Pavone monumentale · hall di showroom" loading="lazy" src="img/peacock.jpg"/><figcaption>Pavone monumentale · hall di showroom</figcaption></figure>
+<figure class="g" data-cat="Per il business" data-full="img/mask.jpg"><img alt="Volto con corona di piume di pavone · showroom" loading="lazy" src="img/mask.jpg"/><figcaption>Volto con corona di piume di pavone · showroom</figcaption></figure>
+<figure class="g" data-cat="Grandi installazioni" data-full="img/statue.jpg"><img alt="Scultura bianca a figura intera · interno privato" loading="lazy" src="img/statue.jpg"/><figcaption>Scultura bianca a figura intera · interno privato</figcaption></figure>
+<figure class="g" data-cat="Pet art" data-full="img/xmas_frenchie.jpg"><img alt="Bulldog dorato · edizione natalizia" loading="lazy" src="img/xmas_frenchie.jpg"/><figcaption>Bulldog dorato · edizione natalizia</figcaption></figure>
+<figure class="g" data-cat="Pet art" data-full="img/whitedog.jpg"><img alt="Testa di cane bianca · ritratto su misura" loading="lazy" src="img/whitedog.jpg"/><figcaption>Testa di cane bianca · ritratto su misura</figcaption></figure>
+<figure class="g" data-cat="Pet art" data-full="img/xmas_pug.jpg"><img alt="Decor natalizio con scultura oro" loading="lazy" src="img/xmas_pug.jpg"/><figcaption>Decor natalizio con scultura oro</figcaption></figure>
+<figure class="g" data-cat="Disegno &amp; progetto" data-full="img/boxerframe.jpg"><img alt="Ritratto di Boxer in cornice barocca · grafite" loading="lazy" src="img/boxerframe.jpg"/><figcaption>Ritratto di Boxer in cornice barocca · grafite</figcaption></figure>
+<figure class="g" data-cat="Disegno &amp; progetto" data-full="img/model3d.jpg"><img alt="Dal modello 3D: Bulldog in cornice ornamentale" loading="lazy" src="img/model3d.jpg"/><figcaption>Dal modello 3D: Bulldog in cornice ornamentale</figcaption></figure>
+<figure class="g" data-cat="Disegno &amp; progetto" data-full="img/collage1.jpg"><img alt="Dal bozzetto all'opera · Boxer" loading="lazy" src="img/collage1.jpg"/><figcaption>Dal bozzetto all'opera · Boxer</figcaption></figure>
+<figure class="g" data-cat="Pet art" data-full="img/sketchgift.jpg"><img alt="Il regalo perfetto: il tuo cane in scultura" loading="lazy" src="img/sketchgift.jpg"/><figcaption>Il regalo perfetto: il tuo cane in scultura</figcaption></figure>
+<figure class="g" data-cat="Disegno &amp; progetto" data-full="img/collage2.jpg"><img alt="Studio del ritratto · Boxer" loading="lazy" src="img/collage2.jpg"/><figcaption>Studio del ritratto · Boxer</figcaption></figure>
+<figure class="g" data-cat="Pet art" data-full="img/redboxer.jpg"><img alt="Testa di Boxer · rosso lucido" loading="lazy" src="img/redboxer.jpg"/><figcaption>Testa di Boxer · rosso lucido</figcaption></figure>
+</div>
+</div></section>
+<section class="dark" id="processo"><div class="wrap">
+<div class="eyebrow">Come funziona</div>
+<h2>Dall'idea all'installazione</h2>
+<p class="lead">Un processo chiaro, con la tua approvazione a ogni passo. Tempi tipici: 2–6 settimane in base alle dimensioni.</p>
+<div class="steps">
+<div><h3>La tua idea</h3><p>Inviaci una foto, uno schizzo o un riferimento e le misure che immagini.</p></div>
+<div><h3>Preventivo e bozza</h3><p>Entro 48 h ricevi prezzo, tempi e un primo bozzetto.</p></div>
+<div><h3>Modello 3D</h3><p>Modelliamo il pezzo e ti mostriamo un render da approvare.</p></div>
+<div><h3>Stampa e finitura</h3><p>Stampa, levigatura, assemblaggio e pittura a mano.</p></div>
+<div><h3>Consegna</h3><p>Imballo sicuro e spedizione in Europa, o installazione.</p></div>
+</div>
+</div></section>
+<section id="collezione"><div class="wrap">
+<div class="eyebrow">Pronti da spedire</div>
+<h2>La collezione</h2>
+<p class="lead">Sculture da parete di teste di cane e animali, pezzi singoli e composizioni. Ogni modello può essere realizzato in qualsiasi colore o finitura.</p>
+<div class="shopgrid">
+<figure class="prod" data-full="img/redboxer.jpg"><img alt="Testa di Boxer · rosso lucido" loading="lazy" src="img/redboxer.jpg"/><figcaption><span>Testa di Boxer · rosso lucido</span><b>75 €</b></figcaption></figure>
+</div>
+<p class="note">Prezzi IVA inclusa. Spedizione gratuita per ordini oltre 100 €. Puoi acquistare anche direttamente sul nostro TikTok Shop.</p>
+<p><a class="btn alt" href="https://www.tiktok.com/@meravi.art" rel="noopener" target="_blank">Acquista su TikTok →</a></p>
+</div></section>
+<section style="padding-top:10px"><div class="wrap">
+<div class="eyebrow">Perché Meravi.Art</div>
+<h2>Fatto per durare, fatto per farsi notare</h2>
+<div class="why">
+<div><b>Pezzi unici</b><p>Progettati per te, mai prodotti in serie.</p></div>
+<div><b>Qualsiasi misura</b><p>Da un regalo di 15 cm a un'installazione di 3 m.</p></div>
+<div><b>Finitura artigianale</b><p>Levigato e dipinto a mano, lacche premium.</p></div>
+<div><b>Leggero e resistente</b><p>Facile da appendere, perfetto per interni.</p></div>
+</div>
+</div></section>
+<section style="padding-top:20px"><div class="wrap" style="max-width:820px">
+<div class="eyebrow">FAQ</div>
+<h2>Domande frequenti</h2>
+<details><summary>Quanto costa un pezzo su misura?</summary><p>I ritratti di animali partono da 50 €, i loghi per aziende da 300 €. Le grandi installazioni sono quotate singolarmente in base a misura, finitura e posa — il preventivo è gratuito e senza impegno.</p></details>
+<details><summary>Quanto tempo serve?</summary><p>I pezzi della collezione partono in pochi giorni. Le opere su misura richiedono 2–6 settimane in base a dimensioni e complessità.</p></details>
+<details><summary>Spedite all'estero?</summary><p>Sì, in tutta Europa, con imballo protettivo. La spedizione è gratuita sopra i 100 €; i pezzi grandi viaggiano con corriere dedicato.</p></details>
+<details><summary>Come funziona il pagamento per gli ordini su misura?</summary><p>Un acconto per avviare il progetto dopo l'approvazione del render 3D e il saldo prima della spedizione.</p></details>
+<details><summary>Di che materiale sono le sculture?</summary><p>Polimero stampato in 3D di alta qualità, rinforzato, levigato e rifinito con primer e lacche professionali: leggero, resistente e con una superficie simile alla ceramica.</p></details>
+</div></section>
+<section class="contact" id="contatti"><div class="wrap">
+<div>
+<div class="eyebrow">Parliamone</div>
+<h2>Richiedi il tuo preventivo gratuito</h2>
+<p class="lead">Descrivi la tua idea: rispondiamo entro 48 ore con prezzo, tempi e un primo bozzetto.</p>
+<div class="chan">
+<a href="https://wa.me/393801709111" rel="noopener" target="_blank"><span><b>WhatsApp</b><br/><small>+39 380 170 9111</small></span><span>→</span></a>
+<a href="mailto:meraviartialia@gmail.com"><span><b>Email</b><br/><small>meraviartialia@gmail.com</small></span><span>→</span></a>
+<a href="https://www.tiktok.com/@meravi.art" rel="noopener" target="_blank"><span><b>TikTok</b><br/><small>@meravi.art</small></span><span>→</span></a>
+</div>
+</div>
+<form class="cbox" id="qf">
+<h3 style="font-size:1.6rem">Richiesta veloce</h3>
+<label>Il tuo nome</label><input id="fn" required=""/>
+<label>Tipo di progetto</label>
+<select id="ft"><option>Grande installazione</option><option>Logo / business</option><option>Ritratto animale / regalo</option><option>Pezzo della collezione</option><option>Altro</option></select>
+<label>Misura indicativa</label>
+<select id="fs"><option>&lt; 30 cm</option><option>30–80 cm</option><option>80–150 cm</option><option>&gt; 150 cm</option></select>
+<label>Descrivi la tua idea</label><textarea id="fm" required=""></textarea>
+<p style="margin:18px 0 0"><button class="btn wa" type="submit">Invia su WhatsApp →</button></p>
+<p id="fhint" style="font-size:.8rem;color:var(--muted)">Il messaggio si apre in WhatsApp, pronto da inviare. Lì puoi allegare le foto.</p>
+</form>
+</div></section>
+<footer><div class="wrap"><span>© 2026 Meravi.Art · Italia</span><span>Sculture e decor su misura · Stampa 3D + artigianato</span></div></footer>
+<a class="btn wa fab" href="https://wa.me/393801709111" rel="noopener" target="_blank">WhatsApp</a>
+<div id="lb"><img alt=""/></div>
+<script>
+// filters
+document.getElementById('filters').onclick=e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#filters button').forEach(x=>x.classList.toggle('on',x===b));const f=b.dataset.f;document.querySelectorAll('#gal .g').forEach(g=>g.style.display=(f==='*'||g.dataset.cat===f)?'':'none')};
+// lightbox
+const lb=document.getElementById('lb');
+document.addEventListener('click',e=>{const f=e.target.closest('[data-full]');if(f){lb.querySelector('img').src=f.dataset.full;lb.classList.add('on')}else if(e.target.closest('#lb'))lb.classList.remove('on')});
+// form -> whatsapp
+document.getElementById('qf').addEventListener('submit',e=>{e.preventDefault();const v=id=>document.getElementById(id).value;const msg=`Ciao Meravi.Art! Sono ${v('fn')}.\nProgetto: ${v('ft')}\nMisura: ${v('fs')}\n${v('fm')}`;const a=document.createElement('a');a.href='https://wa.me/393801709111?text='+encodeURIComponent(msg);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
